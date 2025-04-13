@@ -21,7 +21,7 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Hello CSS 480. Save and see your changes instantly.
+            Hello CSS 480! Save and see your changes instantly.
           </li>
         </ol>
 
