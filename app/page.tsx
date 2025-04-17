@@ -44,8 +44,8 @@ export default function Home() {
 
         <Image
           className="dark:invert"
-          src="/AnnuskaZolyomi line drawing.png"
-          alt="Line drawing of smiling woman"
+          src="/car.png"
+          alt="Image of a cool car"
           width={180}
           height={38}
           priority />
@@ -59,7 +59,7 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Hello CSS 480! Save and see your changes instantly.
+            I'm Sana! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars.
           </li>
         </ol>
         List of Hobbies:
