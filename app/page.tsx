@@ -1,25 +1,32 @@
 import Image from "next/image";
 
-const initialInterests = ['Traveling', 'Horseback Riding', 'Programming', 'Cars', 'Paris'];
+/* creating an array for the list of my hobbies */
+const hobbies = [{
+  id: 0,
+  name: 'Programming',
+}, {
+  id: 1,
+  name: 'Horseback Riding',
+}, {
+  id: 2,
+  name: 'Traveling',
+}, {
+  id: 3,
+  name: 'Cars',
+}, {
+  id: 4,
+  name: 'Paris',
+}];
 
-function InterestList({ sorted }: { sorted: boolean }) {
-  const interests = sorted ? [...initialInterests].sort() : initialInterests;
+function ZolyomiHobbyList() {
+  const myHobbies = ['Programming', 'Horseback Riding', 'Traveling', 'Cars', 'Paris'];
 
   return (
-    <div className="flex flex-col gap-2 items-center sm:items-start">
-      <ol>
-        {interests.map((interest, index) => (
-          <li key={index}>{interest}</li>
-        ))}
-      </ol>
-      {/* This button doesn't do anything without useState */}
-      <button
-        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-        onClick={() => alert("Can't sort dynamically without state!")}
-      >
-        Re-sort List
-      </button>
-    </div>
+    <ol>
+      {myHobbies.map(hobby => (
+        <li key={hobby}>{hobby}</li>
+      ))}
+    </ol>
   );
 }
 
@@ -33,16 +40,16 @@ export default function Home() {
           alt="Next.js logo"
           width={180}
           height={38}
-          priority
-        />
+          priority />
+
         <Image
-          className="rounded-full"
-          src="/car.png"
-          alt="A photo of a cool BMW"
+          className="dark:invert"
+          src="/AnnuskaZolyomi line drawing.png"
+          alt="Line drawing of smiling woman"
           width={180}
-          height={180}
-          priority
-        />
+          height={38}
+          priority />
+
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
@@ -52,12 +59,11 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Hello! I'm Sal — welcome to my CSS 480 landing page. I enjoy traveling the world, riding horses, programming cool stuff, working on cars, and exploring beautiful cities like Paris!
+            Hello CSS 480! Save and see your changes instantly.
           </li>
         </ol>
-
-        <h2 className="text-lg font-semibold">Things That Interest Me:</h2>
-        <InterestList sorted={false} /> {/* You can pass sorted={true} to pre-sort */}
+        List of Hobbies:
+        <ZolyomiHobbyList />
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
@@ -71,8 +77,7 @@ export default function Home() {
               src="/vercel.svg"
               alt="Vercel logomark"
               width={20}
-              height={20}
-            />
+              height={20} />
             Deploy now
           </a>
           <a
@@ -98,8 +103,7 @@ export default function Home() {
             src="/file.svg"
             alt="File icon"
             width={16}
-            height={16}
-          />
+            height={16} />
           Learn
         </a>
         <a
@@ -113,8 +117,7 @@ export default function Home() {
             src="/window.svg"
             alt="Window icon"
             width={16}
-            height={16}
-          />
+            height={16} />
           Examples
         </a>
         <a
@@ -128,8 +131,7 @@ export default function Home() {
             src="/globe.svg"
             alt="Globe icon"
             width={16}
-            height={16}
-          />
+            height={16} />
           Go to nextjs.org →
         </a>
       </footer>
