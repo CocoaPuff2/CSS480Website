@@ -72,7 +72,7 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Hello CSS 480! Save and see your changes instantly.
+            Hello I'm Sana! Welcome to my CSS 480 landing page! I like programming, horseback riding, and traveling.
           </li>
         </ol>
         List of Stuff:
