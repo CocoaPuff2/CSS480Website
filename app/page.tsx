@@ -1,32 +1,48 @@
+import { useState } from "react";
 import Image from "next/image";
 
-/* creating an array for the list of my hobbies */
-const hobbies = [{
-  id: 0,
-  name: 'Programming',
-}, {
-  id: 1,
-  name: 'Horseback Riding',
-}, {
-  id: 2,
-  name: 'Traveling',
-}, {
-  id: 3,
-  name: 'Cars',
-}, {
-  id: 4,
-  name: 'Paris',
-}];
+/* Creating an array for the list of my hobbies */
+const hobbies = [
+  { id: 0, name: 'Programming' },
+  { id: 1, name: 'Horseback Riding' },
+  { id: 2, name: 'Traveling' },
+  { id: 3, name: 'Cars' },
+  { id: 4, name: 'Paris!' }
+];
 
 function HobbyList() {
-  const myHobbies = ['Programming', 'Horseback Riding', 'Traveling', 'Cars', 'Paris'];
+  // Step 1: Initialize hobbies array in state
+  const [hobbyList, setHobbyList] = useState(hobbies);
+
+  // Step 2: Function to shuffle the list
+  const shuffleList = () => {
+    const shuffledHobbies = [...hobbyList];
+    for (let i = shuffledHobbies.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledHobbies[i], shuffledHobbies[j]] = [shuffledHobbies[j], shuffledHobbies[i]];
+    }
+    setHobbyList(shuffledHobbies); // Update state with shuffled list
+  };
 
   return (
-    <ol>
-      {myHobbies.map(hobby => (
-        <li key={hobby}>{hobby}</li>
-      ))}
-    </ol>
+    <div>
+      {/* Step 3: Button to shuffle list */}
+      <button
+        onClick={shuffleList}
+        className="bg-blue-500 text-white py-2 px-4 rounded mt-4"
+      >
+        Shuffle List
+      </button>
+
+      {/* Displaying the list of hobbies */}
+      <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] mt-6">
+        {hobbyList.map(hobby => (
+          <li key={hobby.id} className="mb-2 tracking-[-.01em]">
+            {hobby.name}
+          </li>
+        ))}
+      </ol>
+    </div>
   );
 }
 
@@ -51,11 +67,12 @@ export default function Home() {
 
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
-            I'm Sana! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars.
+            I'm Sal! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars, especially Dodge Challengers and BMWs.
+            I'm excited to share my journey with you and look forward to building awesome projects in this course!
           </li>
         </ol>
 
-        List of Hobbies:
+        <p>List of Hobbies:</p>
         <HobbyList />
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
