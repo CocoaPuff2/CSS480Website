@@ -45,8 +45,8 @@ export default function Home() {
         <Image
           src="/car.png"
           alt="Image of a cool car"
-          width={180}
-          height={38}
+          width={720}
+          height={152}
           priority />
 
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
