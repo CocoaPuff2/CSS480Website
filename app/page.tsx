@@ -1,16 +1,9 @@
 import Image from "next/image";
 
-// Initial interests array
 const initialInterests = ['Traveling', 'Horseback Riding', 'Programming', 'Cars', 'Paris'];
 
-function InterestList() {
-  const [interests, setInterests] = useState(initialInterests);
-
-  const handleResort = () => {
-    // Create a copy and sort alphabetically
-    const sorted = [...interests].sort();
-    setInterests(sorted);
-  };
+function InterestList({ sorted }: { sorted: boolean }) {
+  const interests = sorted ? [...initialInterests].sort() : initialInterests;
 
   return (
     <div className="flex flex-col gap-2 items-center sm:items-start">
@@ -19,9 +12,10 @@ function InterestList() {
           <li key={index}>{interest}</li>
         ))}
       </ol>
+      {/* This button doesn't do anything without useState */}
       <button
-        onClick={handleResort}
         className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        onClick={() => alert("Can't sort dynamically without state!")}
       >
         Re-sort List
       </button>
@@ -33,8 +27,6 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-
-        {/* Logo image */}
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -43,18 +35,14 @@ export default function Home() {
           height={38}
           priority
         />
-
-        {/* Personal image (A cool car) */}
         <Image
           className="rounded-full"
-          src="/car.png" // <- Replace with your image path
+          src="/car.png"
           alt="A photo of a cool BMW"
           width={180}
           height={180}
           priority
         />
-
-        {/* Intro text */}
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
@@ -64,15 +52,13 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            Hello! I'm Sana — welcome to my CSS 480 landing page. I enjoy traveling the world, riding horses, programming cool stuff, working on cars, and exploring beautiful cities like Paris!
+            Hello! I'm Sal — welcome to my CSS 480 landing page. I enjoy traveling the world, riding horses, programming cool stuff, working on cars, and exploring beautiful cities like Paris!
           </li>
         </ol>
 
-        {/* Interests List with Re-sort Button */}
         <h2 className="text-lg font-semibold">Things That Interest Me:</h2>
-        <InterestList />
+        <InterestList sorted={false} /> {/* You can pass sorted={true} to pre-sort */}
 
-        {/* Deploy / Docs Buttons */}
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
@@ -100,7 +86,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
