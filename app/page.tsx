@@ -43,7 +43,6 @@ export default function Home() {
           priority />
 
         <Image
-          className="dark:invert"
           src="/car.png"
           alt="Image of a cool car"
           width={180}
