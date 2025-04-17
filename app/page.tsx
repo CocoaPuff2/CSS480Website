@@ -18,7 +18,7 @@ const hobbies = [{
   name: 'Paris',
 }];
 
-function ZolyomiHobbyList() {
+function HobbyList() {
   const myHobbies = ['Programming', 'Horseback Riding', 'Traveling', 'Cars', 'Paris'];
 
   return (
@@ -51,18 +51,12 @@ export default function Home() {
 
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
             I'm Sana! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars.
           </li>
         </ol>
+
         List of Hobbies:
-        <ZolyomiHobbyList />
+        <HobbyList />
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
