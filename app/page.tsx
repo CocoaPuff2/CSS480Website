@@ -1,3 +1,5 @@
+"use client";  // Add this line to mark the file as a client-side component
+
 import { useState } from "react";
 import Image from "next/image";
 
