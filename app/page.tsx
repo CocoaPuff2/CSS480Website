@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 /* Creating an array for the list of my hobbies */
 const hobbies = [
@@ -13,30 +14,26 @@ const hobbies = [
 ];
 
 function HobbyList() {
-  // Step 1: Initialize hobbies array in state
   const [hobbyList, setHobbyList] = useState(hobbies);
 
-  // Step 2: Function to shuffle the list
   const shuffleList = () => {
     const shuffledHobbies = [...hobbyList];
     for (let i = shuffledHobbies.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffledHobbies[i], shuffledHobbies[j]] = [shuffledHobbies[j], shuffledHobbies[i]];
     }
-    setHobbyList(shuffledHobbies); // Update state with shuffled list
+    setHobbyList(shuffledHobbies);
   };
 
   return (
     <div>
-      {/* Step 3: Button to shuffle list */}
       <button
         onClick={shuffleList}
         className="bg-blue-500 text-white py-2 px-4 rounded mt-4"
+        aria-label="Shuffle hobbies list"
       >
         Shuffle List
       </button>
-
-      {/* Displaying the list of hobbies */}
       <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] mt-6">
         {hobbyList.map(hobby => (
           <li key={hobby.id} className="mb-2 tracking-[-.01em]">
@@ -48,9 +45,24 @@ function HobbyList() {
   );
 }
 
+function NavBar() {
+  return (
+    <nav className="flex gap-4 mt-4" aria-label="Main navigation">
+      <Link href="/">
+        <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="h">Home</a>
+      </Link>
+      <Link href="/things-to-read">
+        <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="t">Things to Read</a>
+      </Link>
+    </nav>
+  );
+}
+
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <NavBar />
+
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -69,7 +81,7 @@ export default function Home() {
 
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
-            I'm Sana! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars, especially Dodge Challengers and BMWs.
+            I'm Sal! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars, especially Dodge Challengers and BMWs.
             I'm excited to share my journey with you and look forward to building awesome projects in this course!
           </li>
         </ol>
