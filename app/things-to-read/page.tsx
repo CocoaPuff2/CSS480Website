@@ -12,7 +12,6 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit BMW Mods website"
-            tabIndex={0} // Ensures the link can be focused via keyboard
           >
             BMW Modifications
           </Link>
@@ -23,7 +22,6 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Formula 1 website"
-            tabIndex={0}
           >
             Formula 1
           </Link>
@@ -34,12 +32,80 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Musee d'Orangerie website"
-            tabIndex={0}
           >
             Musee d'Orangerie
           </Link>
         </li>
-        {/* Add the rest of your links similarly */}
+        <li>
+          <Link
+            href="https://www.visitdubai.com/en/articles/top-things-to-do-in-dubai"
+            target="_blank"
+            className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
+            aria-label="Visit Dubai Itinerary website"
+          >
+            Dubai Itinerary
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.miumiu.com/us/en.html"
+            target="_blank"
+            className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
+            aria-label="Visit Miu Miu website"
+          >
+            Miu Miu
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://vaganovaacademy.ru/index/eng.html"
+            target="_blank"
+            className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
+            aria-label="Visit Vaganova Ballet Academy website"
+          >
+            Vaganova Ballet Academy
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.twinspires.com/edge/racing/top-10-best-racehorses-of-all-time/"
+            target="_blank"
+            className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
+            aria-label="Visit Top 10 Best Racehorses of All Time"
+          >
+            Racehorses
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://stackoverflow.com/questions"
+            target="_blank"
+            className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
+            aria-label="Visit Stack Overflow website"
+          >
+            Stack Overflow
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.dodgegarage.com/srt-demon-170"
+            target="_blank"
+            className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
+            aria-label="Visit Dodge Garage website"
+          >
+            Dodge Garage
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.musee-orsay.fr/en"
+            target="_blank"
+            className="text-blue-600 hover:underline visited:text-purple-600 focus:outline focus:outline-2 focus:outline-blue-500"
+            aria-label="Visit Musee d'Orsay website"
+          >
+            Musee d'Orsay
+          </Link>
+        </li>
       </ul>
     </div>
   );
