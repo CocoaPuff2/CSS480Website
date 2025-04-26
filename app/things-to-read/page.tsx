@@ -13,7 +13,7 @@ export default function ThingsToRead() {
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit BMW Mods website"
           >
-            BMW Mods
+            BMW Modifications
           </Link>
         </li>
         <li>
