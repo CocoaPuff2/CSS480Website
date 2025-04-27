@@ -12,6 +12,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit BMW Mods website"
+            accessKey="1" // Shortcut for the first link
           >
             BMW Mods
           </Link>
@@ -22,6 +23,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Formula 1 website"
+            accessKey="2" // Shortcut for the second link
           >
             Formula 1
           </Link>
@@ -32,6 +34,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Musee d'Orangerie website"
+            accessKey="3" // Shortcut for the third link
           >
             Musee d'Orangerie
           </Link>
@@ -42,6 +45,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Dubai Itinerary website"
+            accessKey="4" // Shortcut for the fourth link
           >
             Dubai Itinerary
           </Link>
@@ -52,6 +56,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Miu Miu website"
+            accessKey="5" // Shortcut for the fifth link
           >
             Miu Miu
           </Link>
@@ -62,6 +67,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Vaganova Ballet Academy website"
+            accessKey="6" // Shortcut for the sixth link
           >
             Vaganova Ballet Academy
           </Link>
@@ -72,6 +78,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Top 10 Best Racehorses of All Time"
+            accessKey="7" // Shortcut for the seventh link
           >
             Racehorses
           </Link>
@@ -82,6 +89,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Stack Overflow website"
+            accessKey="8" // Shortcut for the eighth link
           >
             Stack Overflow
           </Link>
@@ -92,6 +100,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Dodge Garage website"
+            accessKey="9" // Shortcut for the ninth link
           >
             Dodge Garage
           </Link>
@@ -102,6 +111,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Musee d'Orsay website"
+            accessKey="0" // Shortcut for the tenth link
           >
             Musee d'Orsay
           </Link>
