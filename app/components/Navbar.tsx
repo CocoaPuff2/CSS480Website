@@ -1,32 +1,26 @@
-function HobbyList() {
-  const [hobbyList, setHobbyList] = useState(hobbies);
+import Link from 'next/link';
 
-  const shuffleList = () => {
-    const shuffledHobbies = [...hobbyList];
-    for (let i = shuffledHobbies.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledHobbies[i], shuffledHobbies[j]] = [shuffledHobbies[j], shuffledHobbies[i]];
-    }
-    setHobbyList(shuffledHobbies);
-  };
-
+export default function NavBar() {
   return (
-    <div>
-      <button
-        onClick={shuffleList}
-        className="bg-blue-500 text-white py-2 px-4 rounded mt-4"
-        aria-label="Shuffle hobbies list"
-        accessKey="s" // Keyboard shortcut for Shuffle button
-      >
-        Shuffle List
-      </button>
-      <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)] mt-6">
-        {hobbyList.map(hobby => (
-          <li key={hobby.id} className="mb-2 tracking-[-.01em]">
-            {hobby.name}
-          </li>
-        ))}
-      </ol>
-    </div>
+    <nav className="flex gap-4 mt-4" aria-label="Main navigation">
+      <Link href="/">
+        <a
+          className="underline focus:outline focus:outline-2 focus:outline-blue-500"
+          accessKey="h" // Shortcut for 'Home'
+          aria-label="Home"
+        >
+          Home
+        </a>
+      </Link>
+      <Link href="/things-to-read">
+        <a
+          className="underline focus:outline focus:outline-2 focus:outline-blue-500"
+          accessKey="t" // Shortcut for 'Things to Read'
+          aria-label="Things to Read"
+        >
+          Things to Read
+        </a>
+      </Link>
+    </nav>
   );
 }
