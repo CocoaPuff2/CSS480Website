@@ -5,16 +5,16 @@ export default function ThingsToRead() {
     <div className="p-8">
       <h1 className="text-3xl mb-4">Things to Read</h1>
       <p className="mb-6">Here are some of the websites I enjoy:</p>
-      <ol className="space-y-4 list-decimal pl-6">
+      <ol className="space-y-4">
         <li>
           <Link
             href="https://bimmerplug.com"
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit BMW Mods website"
-            accessKey="1"
+            accessKey="1" // Alt + 1 to focus this link
           >
-            BMW Mods
+            1. BMW Mods
           </Link>
         </li>
         <li>
@@ -23,9 +23,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Formula 1 website"
-            accessKey="2"
+            accessKey="2" // Alt + 2 to focus this link
           >
-            Formula 1
+            2. Formula 1
           </Link>
         </li>
         <li>
@@ -34,9 +34,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Musee d'Orangerie website"
-            accessKey="3"
+            accessKey="3" // Alt + 3 to focus this link
           >
-            Musee d'Orangerie
+            3. Musee d'Orangerie
           </Link>
         </li>
         <li>
@@ -45,9 +45,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Dubai Itinerary website"
-            accessKey="4"
+            accessKey="4" // Alt + 4 to focus this link
           >
-            Dubai Itinerary
+            4. Dubai Itinerary
           </Link>
         </li>
         <li>
@@ -56,9 +56,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Miu Miu website"
-            accessKey="5"
+            accessKey="5" // Alt + 5 to focus this link
           >
-            Miu Miu
+            5. Miu Miu
           </Link>
         </li>
         <li>
@@ -67,9 +67,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Vaganova Ballet Academy website"
-            accessKey="6"
+            accessKey="6" // Alt + 6 to focus this link
           >
-            Vaganova Ballet Academy
+            6. Vaganova Ballet Academy
           </Link>
         </li>
         <li>
@@ -78,9 +78,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Top 10 Best Racehorses of All Time"
-            accessKey="7"
+            accessKey="7" // Alt + 7 to focus this link
           >
-            Racehorses
+            7. Racehorses
           </Link>
         </li>
         <li>
@@ -89,9 +89,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Stack Overflow website"
-            accessKey="8"
+            accessKey="8" // Alt + 8 to focus this link
           >
-            Stack Overflow
+            8. Stack Overflow
           </Link>
         </li>
         <li>
@@ -100,9 +100,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Dodge Garage website"
-            accessKey="9"
+            accessKey="9" // Alt + 9 to focus this link
           >
-            Dodge Garage
+            9. Dodge Garage
           </Link>
         </li>
         <li>
@@ -111,9 +111,9 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Musee d'Orsay website"
-            accessKey="0"
+            accessKey="0" // Alt + 0 to focus this link
           >
-            Musee d'Orsay
+            10. Musee d'Orsay
           </Link>
         </li>
       </ol>
