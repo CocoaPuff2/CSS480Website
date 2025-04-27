@@ -5,14 +5,14 @@ export default function ThingsToRead() {
     <div className="p-8">
       <h1 className="text-3xl mb-4">Things to Read</h1>
       <p className="mb-6">Here are some of the websites I enjoy:</p>
-      <ul className="space-y-4">
+      <ol className="space-y-4 list-decimal pl-6">
         <li>
           <Link
             href="https://bimmerplug.com"
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit BMW Mods website"
-            accessKey="1" // Shortcut for the first link
+            accessKey="1"
           >
             BMW Mods
           </Link>
@@ -23,7 +23,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Formula 1 website"
-            accessKey="2" // Shortcut for the second link
+            accessKey="2"
           >
             Formula 1
           </Link>
@@ -34,7 +34,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Musee d'Orangerie website"
-            accessKey="3" // Shortcut for the third link
+            accessKey="3"
           >
             Musee d'Orangerie
           </Link>
@@ -45,7 +45,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Dubai Itinerary website"
-            accessKey="4" // Shortcut for the fourth link
+            accessKey="4"
           >
             Dubai Itinerary
           </Link>
@@ -56,7 +56,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Miu Miu website"
-            accessKey="5" // Shortcut for the fifth link
+            accessKey="5"
           >
             Miu Miu
           </Link>
@@ -67,7 +67,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Vaganova Ballet Academy website"
-            accessKey="6" // Shortcut for the sixth link
+            accessKey="6"
           >
             Vaganova Ballet Academy
           </Link>
@@ -78,7 +78,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Top 10 Best Racehorses of All Time"
-            accessKey="7" // Shortcut for the seventh link
+            accessKey="7"
           >
             Racehorses
           </Link>
@@ -89,7 +89,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Stack Overflow website"
-            accessKey="8" // Shortcut for the eighth link
+            accessKey="8"
           >
             Stack Overflow
           </Link>
@@ -100,7 +100,7 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Dodge Garage website"
-            accessKey="9" // Shortcut for the ninth link
+            accessKey="9"
           >
             Dodge Garage
           </Link>
@@ -111,12 +111,12 @@ export default function ThingsToRead() {
             target="_blank"
             className="text-blue-600 hover:underline focus:outline focus:outline-2 focus:outline-blue-500"
             aria-label="Visit Musee d'Orsay website"
-            accessKey="0" // Shortcut for the tenth link
+            accessKey="0"
           >
             Musee d'Orsay
           </Link>
         </li>
-      </ul>
+      </ol>
     </div>
   );
 }
