@@ -54,6 +54,9 @@ function NavBar() {
       <Link href="/things-to-read">
         <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="t">Things to Read</a>
       </Link>
+      <Link href="/keyboard-documentation">
+              <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="t">Things to Read</a>
+            </Link>
     </nav>
   );
 }

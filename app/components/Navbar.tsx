@@ -21,7 +21,7 @@ export default function NavBar() {
           Things to Read
         </a>
       </Link>
-      <Link href="/">
+      <Link href="/keyboard-documentation">
               <a
                 className="underline focus:outline focus:outline-2 focus:outline-blue-500"
                 accessKey="h" // Shortcut for 'Keyboard Documentation'
