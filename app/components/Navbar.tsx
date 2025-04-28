@@ -24,7 +24,7 @@ export default function NavBar() {
       <Link href="/keyboard-documentation">
               <a
                 className="underline focus:outline focus:outline-2 focus:outline-blue-500"
-                accessKey="h" // Shortcut for 'Keyboard Documentation'
+                accessKey="k" // Shortcut for 'Keyboard Documentation'
                 aria-label="Documentation"
               >
                 Keyboard Documentation
