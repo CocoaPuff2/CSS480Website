@@ -27,7 +27,7 @@ export default function ThingsToRead() {
         <br />
         - On <strong>Windows</strong>: Hold <strong>Alt</strong> + number key.
         <br />
-        - On <strong>Mac</strong>: Hold <strong>Option</strong> (⌥) + number key.
+        - On <strong>Mac</strong>: Hold <strong>Control + Option</strong> (⌥) + number key.
       </p>
       <ol className="list-decimal list-inside space-y-4">
         <li>
