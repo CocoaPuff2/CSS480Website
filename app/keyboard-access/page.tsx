@@ -68,3 +68,50 @@ export default function ThingsToRead() {
             </Link>
             {" "} (Alt+3 / Ctrl+⌥+3)
           </li>
+          <li>
+            <Link href="https://www.visitdubai.com/en/articles/top-things-to-do-in-dubai" target="_blank" data-keyboard="4" className="text-blue-600 underline">
+              4. Dubai Itinerary
+            </Link>
+            {" "} (Alt+4 / Ctrl+⌥+4)
+          </li>
+          <li>
+            <Link href="https://www.miumiu.com/us/en.html" target="_blank" data-keyboard="5" className="text-blue-600 underline">
+              5. Miu Miu
+            </Link>
+            {" "} (Alt+5 / Ctrl+⌥+5)
+          </li>
+          <li>
+            <Link href="https://vaganovaacademy.ru/index/eng.html" target="_blank" data-keyboard="6" className="text-blue-600 underline">
+              6. Vaganova Ballet Academy
+            </Link>
+            {" "} (Alt+6 / Ctrl+⌥+6)
+          </li>
+          <li>
+            <Link href="https://www.twinspires.com/edge/racing/top-10-best-racehorses-of-all-time/" target="_blank" data-keyboard="7" className="text-blue-600 underline">
+              7. Racehorses
+            </Link>
+            {" "} (Alt+7 / Ctrl+⌥+7)
+          </li>
+          <li>
+            <Link href="https://stackoverflow.com/questions" target="_blank" data-keyboard="8" className="text-blue-600 underline">
+              8. Stack Overflow
+            </Link>
+            {" "} (Alt+8 / Ctrl+⌥+8)
+          </li>
+          <li>
+            <Link href="https://www.dodgegarage.com/srt-demon-170" target="_blank" data-keyboard="9" className="text-blue-600 underline">
+              9. Dodge Garage
+            </Link>
+            {" "} (Alt+9 / Ctrl+⌥+9)
+          </li>
+          <li>
+            <Link href="https://www.musee-orsay.fr/en" target="_blank" data-keyboard="0" className="text-blue-600 underline">
+              10. Musée d'Orsay
+            </Link>
+            {" "} (Alt+0 / Ctrl+⌥+0)
+          </li>
+        </ol>
+      </main>
+    </div>
+  );
+}
