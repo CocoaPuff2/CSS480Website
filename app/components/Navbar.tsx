@@ -21,6 +21,15 @@ export default function NavBar() {
           Things to Read
         </a>
       </Link>
+      <Link href="/">
+              <a
+                className="underline focus:outline focus:outline-2 focus:outline-blue-500"
+                accessKey="h" // Shortcut for 'Keyboard Documentation'
+                aria-label="Documentation"
+              >
+                Keyboard Documentation
+              </a>
+            </Link>
     </nav>
   );
 }
