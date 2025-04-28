@@ -23,7 +23,11 @@ export default function ThingsToRead() {
     <main className="p-8">
       <h1 className="text-3xl font-bold mb-6">Things to Read</h1>
       <p className="mb-6">
-        Here are some interesting websites you can jump to using your keyboard (hold <strong>Alt</strong> + number).
+        Here are some interesting websites you can jump to using your keyboard:
+        <br />
+        - On <strong>Windows</strong>: Hold <strong>Alt</strong> + number key.
+        <br />
+        - On <strong>Mac</strong>: Hold <strong>Option</strong> (⌥) + number key.
       </p>
       <ol className="list-decimal list-inside space-y-4">
         <li>
