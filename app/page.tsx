@@ -163,5 +163,15 @@ export default function Home() {
         </a>
       </footer>
     </div>
+
+   <div className="mt-16 w-full max-w-xl text-sm text-left text-gray-800">
+     <h2 className="text-xl font-semibold mb-4">Keyboard Shortcuts</h2>
+     <ul className="list-disc list-inside space-y-2">
+       <li><strong>Go to Home Page:</strong> Control + Option + H (Mac), Alt + H (Windows)</li>
+       <li><strong>Go to Things to Read:</strong> Control + Option + T (Mac), Alt + T (Windows)</li>
+       <li><strong>Go to Keyboard Documentation:</strong> Control + Option + K (Mac), Alt + K (Windows)</li>
+       <li><strong>External Links:</strong> Control + Option + 1–0 (Mac), Alt + 1–0 (Windows)</li>
+     </ul>
+   </div>
   );
 }
