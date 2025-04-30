@@ -52,7 +52,7 @@ export default function KeyboardDocumentation() {
         <h2 className="text-2xl font-semibold mb-4">External Link Shortcuts</h2>
         <ol className="list-decimal list-inside space-y-2 text-gray-700">
           <li><a href="https://bimmerplug.com" target="_blank" data-keyboard="1" className="text-blue-600 underline">BMW Mods</a> (Alt+1 / Ctrl+⌥+1)</li>
-          <li><a href="https://www.formula1.com" target="_blank" data-keyboard="2" className="text-blue-600 underline">Formula 1</a> (Alt+2 / Ctrl+⌥+2)</li>
+          <li><a href="https://www.formula1.com" target="_blank" data-keyboard="2" className="text-blue-600 underline">Formulaa 1</a> (Alt+2 / Ctrl+⌥+2)</li>
           <li><a href="https://www.musee-orangerie.fr/en/node/197502" target="_blank" data-keyboard="3" className="text-blue-600 underline">Musée d'Orangerie</a> (Alt+3 / Ctrl+⌥+3)</li>
           <li><a href="https://www.visitdubai.com/en/articles/top-things-to-do-in-dubai" target="_blank" data-keyboard="4" className="text-blue-600 underline">Dubai Itinerary</a> (Alt+4 / Ctrl+⌥+4)</li>
           <li><a href="https://www.miumiu.com/us/en.html" target="_blank" data-keyboard="5" className="text-blue-600 underline">Miu Miu</a> (Alt+5 / Ctrl+⌥+5)</li>
