@@ -93,7 +93,7 @@ export default function Home() {
         <HobbyList />
 
         {/* Keyboard Shortcuts Section */}
-        <div className="mt-16 w-full max-w-xl text-sm text-left text-gray-800">
+        <div className="mt-16 w-full max-w-xl text-sm text-left text-white">
           <h2 className="text-xl font-semibold mb-4">Keyboard Shortcuts</h2>
           <ul className="list-disc list-inside space-y-2">
             <li><strong>Go to Home Page:</strong> Control + Option + Tab + H (Mac), Alt + Tab + H (Windows) — Works globally from any page</li>
