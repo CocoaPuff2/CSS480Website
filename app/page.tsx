@@ -55,8 +55,8 @@ function NavBar() {
         <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="t">Things to Read</a>
       </Link>
       <Link href="/keyboard-documentation">
-              <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="k">Keyboard Documentation</a>
-            </Link>
+        <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="k">Keyboard Documentation</a>
+      </Link>
     </nav>
   );
 }
@@ -91,6 +91,18 @@ export default function Home() {
 
         <p>List of Hobbies:</p>
         <HobbyList />
+
+        {/* 👇 Keyboard Shortcuts Section Added Here */}
+        <div className="mt-16 w-full max-w-xl text-sm text-left text-gray-800">
+          <h2 className="text-xl font-semibold mb-4">Keyboard Shortcuts</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li><strong>Go to Home Page:</strong> Control + Option + H (Mac), Alt + H (Windows)</li>
+            <li><strong>Go to Things to Read:</strong> Control + Option + T (Mac), Alt + T (Windows)</li>
+            <li><strong>Go to Keyboard Documentation:</strong> Control + Option + K (Mac), Alt + K (Windows)</li>
+            <li><strong>External Links:</strong> Control + Option + 1–0 (Mac), Alt + 1–0 (Windows)</li>
+          </ul>
+        </div>
+        {/* 👆 End of Keyboard Shortcuts Section */}
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
@@ -163,15 +175,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-
-   <div className="mt-16 w-full max-w-xl text-sm text-left text-gray-800">
-     <h2 className="text-xl font-semibold mb-4">Keyboard Shortcuts</h2>
-     <ul className="list-disc list-inside space-y-2">
-       <li><strong>Go to Home Page:</strong> Control + Option + H (Mac), Alt + H (Windows)</li>
-       <li><strong>Go to Things to Read:</strong> Control + Option + T (Mac), Alt + T (Windows)</li>
-       <li><strong>Go to Keyboard Documentation:</strong> Control + Option + K (Mac), Alt + K (Windows)</li>
-       <li><strong>External Links:</strong> Control + Option + 1–0 (Mac), Alt + 1–0 (Windows)</li>
-     </ul>
-   </div>
   );
 }
