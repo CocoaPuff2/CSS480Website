@@ -92,17 +92,21 @@ export default function Home() {
         <p>List of Hobbies:</p>
         <HobbyList />
 
-        {/* 👇 Keyboard Shortcuts Section Added Here */}
+        {/* Keyboard Shortcuts Section */}
         <div className="mt-16 w-full max-w-xl text-sm text-left text-gray-800">
           <h2 className="text-xl font-semibold mb-4">Keyboard Shortcuts</h2>
           <ul className="list-disc list-inside space-y-2">
-            <li><strong>Go to Home Page:</strong> Control + Option + H (Mac), Alt + H (Windows)</li>
+            <li><strong>Go to Home Page:</strong> Control + Option + Tab + H (Mac), Alt + Tab + H (Windows) — Works globally from any page</li>
             <li><strong>Go to Things to Read:</strong> Control + Option + T (Mac), Alt + T (Windows)</li>
             <li><strong>Go to Keyboard Documentation:</strong> Control + Option + K (Mac), Alt + K (Windows)</li>
             <li><strong>External Links:</strong> Control + Option + 1–0 (Mac), Alt + 1–0 (Windows)</li>
           </ul>
+          <p className="mt-6">
+            <strong>(Keyboard Access:</strong> On Windows: Hold <code>Alt</code> + number key.<br />
+            On Mac: Hold <code>Control</code> + <code>Option (⌥)</code> + number key.
+            This works for navigating to external links via access keys. To return to the Home page from anywhere, press <code>Control + Option + Tab + H</code>.)
+          </p>
         </div>
-        {/* 👆 End of Keyboard Shortcuts Section */}
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
