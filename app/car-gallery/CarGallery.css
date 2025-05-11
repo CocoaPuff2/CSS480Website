@@ -1,62 +1,83 @@
+/* car-gallery.css */
+
+:root {
+  --blue-color: #5A00F5; /* Defined blue color for text */
+}
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
-.car-gallery {
+.min-h-screen {
   min-height: 100vh;
-  background-color: white;
-  color: black;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
 }
 
+.bg-white {
+  background-color: #ffffff;
+}
 
-.car-gallery h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.text-black {
+  color: #000000;
+}
+
+.text-center {
   text-align: center;
 }
 
-
-.car-gallery .gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+.text-lg {
+  font-size: 1.125rem; /* Slightly larger text size */
 }
 
-
-.car-gallery .car-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 600px;
+.text-sm {
+  font-size: 0.875rem; /* Smaller text size */
 }
 
-.car-gallery img {
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.space-y-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.rounded-lg {
   border-radius: 0.5rem;
-  max-width: 100%;
 }
-
 
 .subheading {
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #5A00F5; /* Custom blue color */
-  text-align: left;
+  color: var(--blue-color); /* Apply blue color to subheadings */
 }
 
+.flex {
+  display: flex;
+}
 
-.car-gallery p {
-  font-size: 1rem;
-  text-align: left;
-  margin-top: 0.5rem;
-  line-height: 1.5;
-  max-width: 90%;
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-y-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* Adjust size for large headings */
+}
+
+.font-bold {
+  font-weight: bold;
 }

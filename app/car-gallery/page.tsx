@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import './car-gallery.css';
 
 export default function CarGallery() {
   return (
