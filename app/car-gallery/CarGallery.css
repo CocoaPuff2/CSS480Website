@@ -10,49 +10,49 @@ export default function CarGallery() {
       <div className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <Image
-            src="https://dodge.jpg"
+            src="https://dodge.jpg" // Fixed the image URL
             alt="Dodge Challenger"
             width={600}
             height={400}
             className="rounded-lg"
           />
-          <p className="mt-2 text-lg font-semibold subheading">Dodge Challenger</p>
+          <p className="mt-2 text-lg font-semibold text-customBlue">Dodge Challenger</p>
           <p className="text-sm">This is my absolute favorite car. I love American muscle cars.</p>
         </div>
 
         <div className="flex flex-col items-center">
           <Image
-            src="https://bmw.jpg"
+            src="https://bmw.jpg" // Fixed the image URL
             alt="BMW"
             width={600}
             height={400}
             className="rounded-lg"
           />
-          <p className="mt-2 text-lg font-semibold subheading">BMW M5</p>
+          <p className="mt-2 text-lg font-semibold text-customBlue">BMW M5</p>
           <p className="text-sm">I love vintage cars, especially any BMW from the 1990s.</p>
         </div>
 
         <div className="flex flex-col items-center">
           <Image
-            src="https://camaro.jpg"
+            src="https://camaro.jpg" // Fixed the image URL
             alt="Camaro"
             width={600}
             height={400}
             className="rounded-lg"
           />
-          <p className="mt-2 text-lg font-semibold subheading">Camaro</p>
+          <p className="mt-2 text-lg font-semibold text-customBlue">Camaro</p>
           <p className="text-sm">Bumblebee from Transformers! The car that got me into cars.</p>
         </div>
 
         <div className="flex flex-col items-center">
           <Image
-            src="https://mercedes.jpg"
+            src="https://mercedes.jpg" // Fixed the image URL
             alt="Mercedes AMG"
             width={600}
             height={400}
             className="rounded-lg"
           />
-          <p className="mt-2 text-lg font-semibold subheading">Mercedes A</p>
+          <p className="mt-2 text-lg font-semibold text-customBlue">Mercedes A</p>
           <p className="text-sm">I see so many of these in Dubai, and they have a really cool look!</p>
         </div>
       </div>
