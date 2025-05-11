@@ -18,7 +18,6 @@ export default function NavBar() {
           Keyboard Documentation
         </a>
       </Link>
-      {/* Add the "Car Gallery" link */}
       <Link href="/car-gallery">
         <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="c">
           Car Gallery

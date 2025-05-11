@@ -1,61 +1,62 @@
-"use client";
 
-import Image from "next/image";
+body {
+  font-family: 'Arial', sans-serif;
+}
 
-export default function CarGallery() {
-  return (
-    <div className="min-h-screen bg-white text-black p-8 space-y-12">
-      <h1 className="text-2xl font-bold text-center">Car Gallery</h1>
+.car-gallery {
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
 
-      <div className="flex flex-col items-center space-y-8">
-        <div className="flex flex-col items-center">
-          <Image
-            src="https://dodge.jpg" // Fixed the image URL
-            alt="Dodge Challenger"
-            width={600}
-            height={400}
-            className="rounded-lg"
-          />
-          <p className="mt-2 text-lg font-semibold text-customBlue">Dodge Challenger</p>
-          <p className="text-sm">This is my absolute favorite car. I love American muscle cars.</p>
-        </div>
 
-        <div className="flex flex-col items-center">
-          <Image
-            src="https://bmw.jpg" // Fixed the image URL
-            alt="BMW"
-            width={600}
-            height={400}
-            className="rounded-lg"
-          />
-          <p className="mt-2 text-lg font-semibold text-customBlue">BMW M5</p>
-          <p className="text-sm">I love vintage cars, especially any BMW from the 1990s.</p>
-        </div>
+.car-gallery h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
 
-        <div className="flex flex-col items-center">
-          <Image
-            src="https://camaro.jpg" // Fixed the image URL
-            alt="Camaro"
-            width={600}
-            height={400}
-            className="rounded-lg"
-          />
-          <p className="mt-2 text-lg font-semibold text-customBlue">Camaro</p>
-          <p className="text-sm">Bumblebee from Transformers! The car that got me into cars.</p>
-        </div>
 
-        <div className="flex flex-col items-center">
-          <Image
-            src="https://mercedes.jpg" // Fixed the image URL
-            alt="Mercedes AMG"
-            width={600}
-            height={400}
-            className="rounded-lg"
-          />
-          <p className="mt-2 text-lg font-semibold text-customBlue">Mercedes A</p>
-          <p className="text-sm">I see so many of these in Dubai, and they have a really cool look!</p>
-        </div>
-      </div>
-    </div>
-  );
+.car-gallery .gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.car-gallery .car-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.car-gallery img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
+
+
+.subheading {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5A00F5; /* Custom blue color */
+  text-align: left;
+}
+
+
+.car-gallery p {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  max-width: 90%;
 }

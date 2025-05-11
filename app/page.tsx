@@ -56,7 +56,6 @@ function NavBar() {
       <Link href="/keyboard-documentation">
         <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="k">Keyboard Documentation</a>
       </Link>
-      {/* Added the link to Car Gallery */}
       <Link href="/car-gallery">
         <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="c">Car Gallery</a>
       </Link>
@@ -123,7 +122,7 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Keyboard Shortcuts Section */}
+        {/* Keyboard Shortcuts */}
         <div className="mt-16 w-full max-w-xl text-sm text-left text-white">
           <h2 className="text-xl font-semibold mb-4">Keyboard Shortcuts</h2>
           <ul className="list-disc list-inside space-y-2">
