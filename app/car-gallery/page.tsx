@@ -10,7 +10,7 @@ export default function CarGallery() {
       <div className="flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <Image
-            src="https:/dodge.jpg"
+            src="https://example.com/dodge.jpg" // Fixed URL: added second slash
             alt="Dodge Challenger"
             width={600}
             height={400}
@@ -22,7 +22,7 @@ export default function CarGallery() {
 
         <div className="flex flex-col items-center">
           <Image
-            src="https:/bmw.jpg"
+            src="https://example.com/bmw.jpg" // Fixed URL: added second slash
             alt="BMW"
             width={600}
             height={400}
@@ -34,7 +34,7 @@ export default function CarGallery() {
 
         <div className="flex flex-col items-center">
           <Image
-            src="https:/camaro.jpg"
+            src="https://example.com/camaro.jpg" // Fixed URL: added second slash
             alt="Camaro"
             width={600}
             height={400}
@@ -46,7 +46,7 @@ export default function CarGallery() {
 
         <div className="flex flex-col items-center">
           <Image
-            src="https:/mercedes.jpg"
+            src="https://example.com/mercedes.jpg" // Fixed URL: added second slash
             alt="Mercedes AMG"
             width={600}
             height={400}
