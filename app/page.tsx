@@ -89,7 +89,7 @@ export default function Home() {
 
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
-            I'm Sal! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars, especially Dodge Challengers and BMWs.
+            I'm Sana! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars, especially Dodge Challengers and BMWs.
             I'm excited to share my journey with you and look forward to building awesome projects in this course!
           </li>
         </ol>
