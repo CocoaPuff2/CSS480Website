@@ -12,7 +12,7 @@ export default function CarGallery() {
         <div className="flex flex-col items-center">
           <Image
             src="https://example.com/dodge.jpg" // Fixed URL: added second slash
-            alt="Dodge Challenger"
+            alt="Dodge Challenger!!"
             width={600}
             height={400}
             className="rounded-lg"
