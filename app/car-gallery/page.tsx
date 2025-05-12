@@ -15,7 +15,7 @@ export default function CarGallery() {
             alt="Dodge Challenger"
             width={600}
             height={400}
-            className="rounded-lg"
+            priority
           />
           <p className="mt-2 text-lg font-semibold subheading">Dodge Challenger</p>
           <p className="text-sm">This is my absolute favorite car. I love American muscle cars.</p>
@@ -27,7 +27,7 @@ export default function CarGallery() {
             alt="BMW"
             width={600}
             height={400}
-            className="rounded-lg"
+            priority
           />
           <p className="mt-2 text-lg font-semibold subheading">BMW M5</p>
           <p className="text-sm">I love vintage cars, especially any BMW from the 1990s.</p>
@@ -39,7 +39,7 @@ export default function CarGallery() {
             alt="Camaro"
             width={600}
             height={400}
-            className="rounded-lg"
+            priority
           />
           <p className="mt-2 text-lg font-semibold subheading">Camaro</p>
           <p className="text-sm">Bumblebee from Transformers! The car that got me into cars.</p>
@@ -48,10 +48,10 @@ export default function CarGallery() {
         <div className="flex flex-col items-center">
           <Image
             src="/mercedes.jpg"
-            alt="Mercedes AMG"
+            alt="Mercedes AMG!"
             width={600}
             height={400}
-            className="rounded-lg"
+            priority
           />
           <p className="mt-2 text-lg font-semibold subheading">Mercedes A</p>
           <p className="text-sm">I see so many of these in Dubai, and they have a really cool look!</p>
