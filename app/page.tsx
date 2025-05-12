@@ -68,7 +68,7 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-black">
       <NavBar />
 
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start text-white">
+      <main className="flex flex-col gap-[32px] row-start-2 items-start text-white">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -86,7 +86,7 @@ export default function Home() {
           priority
         />
 
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside list-decimal text-sm/6 font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             I'm Sana! Welcome to my CSS 480 Landing Page! I like traveling, programming, and cool cars, especially Dodge Challengers and BMWs.
             I'm excited to share my journey with you and look forward to building awesome projects in this course!
@@ -126,7 +126,7 @@ export default function Home() {
         <div className="mt-16 w-full max-w-xl text-sm text-left text-white">
           <h2 className="text-xl font-semibold mb-4">Keyboard Shortcuts</h2>
           <ul className="list-disc list-inside space-y-2">
-            <li><strong>Go to Home Page:</strong> Control + Option + Tab + H (Mac), Alt + Tab + H (Windows) — Works globally from any page</li>
+            <li><strong>Go to Home Page:</strong> Control + Option + Tab + H (Mac), Alt + Tab + H (Windows)</li>
             <li><strong>Go to Things to Read:</strong> Control + Option + T (Mac), Alt + T (Windows)</li>
             <li><strong>Go to Keyboard Documentation:</strong> Control + Option + K (Mac), Alt + K (Windows)</li>
             <li><strong>External Links:</strong> Control + Option + 1–0 (Mac), Alt + 1–0 (Windows)</li>
@@ -134,7 +134,6 @@ export default function Home() {
           <p className="mt-6">
             <strong>(Keyboard Access:</strong> On Windows: Hold <code>Alt</code> + number key.<br />
             On Mac: Hold <code>Control</code> + <code>Option (⌥)</code> + number key.
-            This works for navigating to external links via access keys.
             To return to the Home page from anywhere, press <code>Control + Option + Tab + H</code>.)
           </p>
         </div>
