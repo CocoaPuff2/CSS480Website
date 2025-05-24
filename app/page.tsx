@@ -59,6 +59,9 @@ function NavBar() {
       <Link href="/car-gallery">
         <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="c">Car Gallery</a>
       </Link>
+      <Link href="/art-gallery">
+              <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="c">Art Gallery</a>
+       </Link>
     </nav>
   );
 }
