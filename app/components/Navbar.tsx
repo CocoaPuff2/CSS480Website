@@ -23,6 +23,11 @@ export default function NavBar() {
           Car Gallery
         </a>
       </Link>
+      <Link href="/art-gallery">
+              <a className="underline focus:outline focus:outline-2 focus:outline-blue-500" accessKey="a">
+                Art Gallery
+              </a>
+       </Link>
     </nav>
   );
 }
